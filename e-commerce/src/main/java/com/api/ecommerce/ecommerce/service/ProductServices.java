@@ -38,9 +38,10 @@ public class ProductServices {
      * Saves or updates a product
      *
      * @param product
+     * @return Product
      */
-    public void saveOrUpdateProduct(Product product) {
-        productRepository.save(product);
+    public Product saveOrUpdateProduct(Product product) {
+        return productRepository.save(product);
     }
 
     /**
