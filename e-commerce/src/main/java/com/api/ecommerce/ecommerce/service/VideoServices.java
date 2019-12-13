@@ -38,9 +38,10 @@ public class VideoServices {
      * Saves or updates a video url
      *
      * @param video
+     * @return Video
      */
-    public void saveOrUpdateVideo(Video video) {
-        videoRepository.save(video);
+    public Video saveOrUpdateVideo(Video video) {
+        return videoRepository.save(video);
     }
 
     /**
