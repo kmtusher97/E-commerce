@@ -38,9 +38,10 @@ public class ImageServices {
      * Saves or updates an image Url
      *
      * @param image
+     * @return
      */
-    public void saveOrUpdateImage(Image image) {
-        imageRepository.save(image);
+    public Image saveOrUpdateImage(Image image) {
+        return imageRepository.save(image);
     }
 
     /**
