@@ -24,6 +24,6 @@ public class Shop {
     @NotBlank(message = "Name is required")
     private String name;
 
-    @OneToMany(mappedBy = "shop", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "shop", fetch = FetchType.EAGER, cascade = CascadeType.REFRESH, orphanRemoval = true)
     private List<Product> products = new ArrayList<>();
 }
