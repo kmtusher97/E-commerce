@@ -5,7 +5,7 @@ E-commerce rest API. Developing with spring boot
 ``sudo apt install virtualenv``<br>
 ``virtualenv -p python3 .``<br>
 ``source bin/activate``<br>
-``pip install Django==2.2``<br>
+``pip install Django==2.2.13``<br>
 ``django-admin --version``<br>
 ``mkdir src && cd src``<br>
 ``django-admin startproject ecommerce .``<br>
